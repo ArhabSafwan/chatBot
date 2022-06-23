@@ -10,11 +10,11 @@ function talk(){
         "How Are You?":"Great"
     };
     var user = document.getElementById('userBox').value;
-    document.getElementById('chatLog').innerHTML = user + "<br>";
+    document.getElementById('display').innerHTML = user + "<br>";
     if (user in know){
-        document.getElementById('chatLog').innerHTML = know[user] + "<br>";
+        document.getElementById('display').innerHTML = know[user] + "<br>";
     }else{
-        document.getElementById('chatLog').innerHTML = "Sorry , I Did Not Understand";
+        document.getElementById('display').innerHTML = "Sorry , I Did Not Understand";
 
     }
 }
